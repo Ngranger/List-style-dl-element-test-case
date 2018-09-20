@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en" dir="ltr" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<title>Test case</title>
+<style>
+dl {margin: 0; padding-left: 40px; counter-reset: item;}
+	dl dt {position: relative; display: block; font: 400 16px/20px Helvetica,Arial,sans-serif;}
+  dl dt::before {
+    position: absolute; top: 0; left: 0; margin-left: -40px; width: 40px; text-align: right;
+    content: counters(item, "", square) " "; counter-increment: item; white-space: pre;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<dl>
+  <dt><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1492092">Bug #1492092</a> on Bugzilla</dt>
+    <dd>This a simplified version of the problem page.</dd>
+</dl>
+
+</main>
+</body>
+</html>
