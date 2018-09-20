@@ -4,8 +4,28 @@
 <meta charset="UTF-8" />
 <title>Test case</title>
 <style>
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+dl {
+  padding: 0 0 0 20px;
+  margin: 16px 0;
+}
+dd {
+  margin: 0 0 0 20px;
+}
+main {
+  background: #353535 url("340px-background-noisy.png") 0 0 repeat;
+  color: #C0C0C0;
+}
 dl {margin: 0; padding-left: 40px; counter-reset: item;}
-	dl dt {position: relative; display: block; font: 400 16px/20px Helvetica,Arial,sans-serif;}
+  dl dt {position: relative; display: block; font: 400 16px/20px Helvetica,Arial,sans-serif;}
   dl dt::before {
     position: absolute; top: 0; left: 0; margin-left: -40px; width: 40px; text-align: right;
     content: counters(item, "", square) " "; counter-increment: item; white-space: pre;
